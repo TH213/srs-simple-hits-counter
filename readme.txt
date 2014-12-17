@@ -12,7 +12,7 @@ Simple plugin to count and show a total number hits (Unique visitors or page-vie
 
 == Description ==
 
-As the name suggests, its a very simple Hit Counter that counts the number of Unique Visitors and Page-views. You can show either the Unique Visitors or total page-views count. You can also add both Counters by two different widgets. It keeps counting even when you have no widget of shortcode active. To completely disable the counter you have to disable the plugin.
+As the name suggests, its a very simple Hit Counter that counts the number of Unique Visitors and Page-views. You can show either the Unique Visitors or total page-views count. You can also add/show both Counters by using two copies of the widget or the shortcode. It keeps counting even when you have no widget or shortcode active. To completely disable the counter you have to disable the plugin.
 
 = Features =
 
