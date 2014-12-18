@@ -17,7 +17,7 @@ function srs_simple_hits_counter(){
     if ( !session_id() ) {
         session_start();
     }
-    if($_SESSION['srs_counter_increased'] != 'yes') {
+    if( isset( $_SESSION['srs_counter_increased'] ) && $_SESSION['srs_counter_increased'] != 'yes') {
         $srs_visitors = intval( get_option('srs_visitors_count') );
         update_option('srs_visitors_count', $srs_visitors+1);
         $_SESSION['srs_counter_increased'] = 'yes';

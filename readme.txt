@@ -52,5 +52,8 @@ http://sandyrig.com/srs-simple-hits-counter/
 
 == Changelog ==
 
-= 0.1.0 =
+= 0.1.1 - 18th Dec 2014 =
+* Fixed a PHP notice.
+
+= 0.1.0 - 17th Dec 2014 =
 * Simple counter to show Unique Visitors or Page-views on your site.
