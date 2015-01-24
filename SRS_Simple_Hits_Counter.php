@@ -4,7 +4,7 @@ Plugin Name: SRS Simple hits Counter
 Plugin URI: http://sandyrig.com/srs-simple-hits-counter/
 Description: Simple plugin to count and show a total number hits (Unique visitors or page-views) to the site without using any third party code.
 Author: Atif N
-Version: 0.1.1
+Version: 0.1.2
 Author URI: http://sandyrig.com
  */
 
