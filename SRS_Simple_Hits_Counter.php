@@ -4,7 +4,7 @@ Plugin Name: SRS Simple hits Counter
 Plugin URI: http://sandyrig.com/srs-simple-hits-counter/
 Description: Simple plugin to count and show a total number hits (Unique visitors or page-views) to the site without using any third party code.
 Author: Atif N
-Version: 0.1.2
+Version: 0.1.3
 Author URI: http://sandyrig.com
  */
 
@@ -30,11 +30,11 @@ function srs_simple_hits_counter(){
 // SHORTCODE
 add_shortcode('srs_total_pageViews', 'srs_getTotal_pageViews');
 function srs_getTotal_pageViews(){
-    return intval(get_option('srs_pageViews_count'));
+    return "<span class='page-views'>".intval(get_option('srs_pageViews_count'))."</span>>";
 }
 add_shortcode('srs_total_visitors', 'srs_getTotal_visitors');
 function srs_getTotal_visitors(){
-    return intval(get_option('srs_visitors_count'));
+    return "<span class='visitors'>".intval(get_option('srs_visitors_count'))."</span>";
 }
 
 
@@ -63,10 +63,10 @@ class SRS_SHC_Widget extends WP_Widget {
         }
         if( $instance['type']=='visitors' ){
             $srs_total_visitors =  intval( get_option('srs_visitors_count') );
-            echo "<span>" . __( $srs_total_visitors, 'text_domain' ) . "</span>";
+            echo "<span class='visitors'>" . __( $srs_total_visitors, 'text_domain' ) . "</span>";
         }elseif( $instance['type']=='pageviews' ){
             $srs_total_pageViews =  intval( get_option('srs_pageViews_count') );
-            echo "<span>" . __( $srs_total_pageViews, 'text_domain' ) . "</span>";
+            echo "<span class='page-views'>" . __( $srs_total_pageViews, 'text_domain' ) . "</span>";
         }
 
         echo $args['after_widget'];

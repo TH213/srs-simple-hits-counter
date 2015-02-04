@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: hits, visitor, counter, page-views
 Requires at least: 3.4
 Tested up to: 4.1
-Stable tag: 0.1.2
+Stable tag: 0.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,9 @@ http://sandyrig.com/srs-simple-hits-counter/
 
 
 == Changelog ==
+
+= 0.1.3 - 4th Feb 2015 =
+* Added CSS classes to identify and add custom style to the counters span tags.
 
 = 0.1.2 - 24th Jan 2015 =
 * Critical - Unique Visitors bug fix.
