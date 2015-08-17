@@ -11,12 +11,18 @@ Author URI: http://sandyrig.com
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
+// Start Session
+add_action('init', 'srs_start_session', 1);
+function srs_start_session() {
+    if(!session_id()) {
+        session_start();
+    }
+}
+
 // UPDATE COUNTER
 add_action('wp_head','srs_simple_hits_counter');
 function srs_simple_hits_counter(){
-    if ( !session_id() ) {
-        session_start();
-    }
+
     if( !isset( $_SESSION['srs_counter_increased'] ) || ( isset( $_SESSION['srs_counter_increased'] ) && $_SESSION['srs_counter_increased'] != 'yes' ) ) {
         $srs_visitors = intval( get_option('srs_visitors_count') );
         update_option('srs_visitors_count', $srs_visitors+1);
