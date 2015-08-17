@@ -3,8 +3,8 @@ Contributors: SandyRig
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7G6PSEZ2J3PCJ
 Tags: hits, visitor, counter, page-views
 Requires at least: 3.4
-Tested up to: 4.1
-Stable tag: 0.1.3
+Tested up to: 4.2.4
+Stable tag: 0.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,8 +22,8 @@ As the name suggests, its a very simple Hit Counter that counts the number of Un
 
 = SHORTCODES =
 
-'srs_total_visitors' for Unique Visitors
-'srs_total_pageViews' for Page-views
+[srs_total_visitors] for Unique Visitors
+[srs_total_pageViews] for Page-views
 
 = Demo =
 
@@ -51,6 +51,9 @@ http://sandyrig.com/srs-simple-hits-counter/
 
 
 == Changelog ==
+
+= 0.1.3 - 17th AUG 2015 =
+* Removed the extra closing tag for page-views shortcode.
 
 = 0.1.3 - 4th Feb 2015 =
 * Added CSS classes to identify and add custom style to the counters span tags.

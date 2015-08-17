@@ -30,7 +30,7 @@ function srs_simple_hits_counter(){
 // SHORTCODE
 add_shortcode('srs_total_pageViews', 'srs_getTotal_pageViews');
 function srs_getTotal_pageViews(){
-    return "<span class='page-views'>".intval(get_option('srs_pageViews_count'))."</span>>";
+    return "<span class='page-views'>".intval(get_option('srs_pageViews_count'))."</span>";
 }
 add_shortcode('srs_total_visitors', 'srs_getTotal_visitors');
 function srs_getTotal_visitors(){
